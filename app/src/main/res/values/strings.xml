@@ -5,7 +5,7 @@
     <string name="ruwcz_price">£%1$.2f</string>
 
     <!-- top bar titles -->
-    <string name="ruwcz_top_bar_home_title">Home/App Title</string>
+    <string name="ruwcz_top_bar_home_title">Premium Butcher Pick</string>
     <string name="ruwcz_top_bar_cart_title">Cart</string>
     <string name="ruwcz_top_bar_checkout_title">Checkout</string>
     <string name="ruwcz_top_bar_orders_title">Orders</string>
@@ -57,16 +57,21 @@
 
     <!-- checkout dialog -->
     <string name="ruwcz_checkout_dialog_title">Thank You for Your Order!</string>
-    <string name="ruwcz_checkout_success_message">Your order has been successfully placed. Please hold on; our team will contact you shortly.</string>
+    <string name="ruwcz_checkout_success_message">Your reservation is confirmed. We will have it ready for collection and hold it in store for 24 hours.</string>
     <string name="ruwcz_checkout_dialog_confirm">Done</string>
 
     <!-- settings screen -->
     <string name="ruwcz_settings_screen_company_label">Company</string>
     <string name="ruwcz_settings_screen_version_label">Version</string>
     <string name="ruwcz_settings_screen_customer_support_label">Customer Support</string>
-    <string name="ruwcz_company_name">Company Name</string>
-    <string name="ruwcz_app_version">1.0.0</string>
-    <string name="ruwcz_customer_support_link">https://website.org/</string>
+    <string name="ruwcz_company_name">PREMIUM BUTCHERS LTD</string>
+    <string name="ruwcz_app_version">1.0</string>
+    <string name="ruwcz_customer_support_link">https://premiumbutchers.casa</string>
+    <string name="ruwcz_category_beef">Beef</string>
+    <string name="ruwcz_category_lamb">Lamb</string>
+    <string name="ruwcz_category_poultry">Poultry</string>
+    <string name="ruwcz_category_sausages">Sausages</string>
+    <string name="ruwcz_category_deli">Deli</string>
 
     <!-- clear cart dialog -->
     <string name="ruwcz_clear_cart_dialog_title">Clear cart?</string>

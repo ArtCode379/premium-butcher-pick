@@ -3,6 +3,10 @@ package premiumbutchers.meat.premiumbutcherpick.ui.composable.screen.checkout
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.text.KeyboardActions
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material3.Button
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
@@ -14,6 +18,7 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.focus.FocusManager
 import androidx.compose.ui.platform.LocalFocusManager
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import premiumbutchers.meat.premiumbutcherpick.ui.state.DataUiState
 import premiumbutchers.meat.premiumbutcherpick.ui.viewmodel.CheckoutViewModel
@@ -72,8 +77,41 @@ private fun CheckoutContent(
     onEmailChanged: (String) -> Unit,
     onPlaceOrderButtonClick: () -> Unit,
 ) {
-    Column(modifier = modifier) {
-
+    Column(
+        modifier = modifier.padding(20.dp),
+        verticalArrangement = Arrangement.spacedBy(14.dp)
+    ) {
+        Text("Reserve your order", style = MaterialTheme.typography.headlineMedium)
+        Text("Your order will be held in store for 24 hours after confirmation.")
+        CheckoutTextField(
+            input = customerFirstName,
+            onInputChange = onFirstNameChanged,
+            labelText = "First name",
+            modifier = Modifier.fillMaxWidth()
+        )
+        CheckoutTextField(
+            input = customerLastName,
+            onInputChange = onLastNameChanged,
+            labelText = "Last name",
+            modifier = Modifier.fillMaxWidth()
+        )
+        CheckoutTextField(
+            input = customerEmail,
+            onInputChange = onEmailChanged,
+            labelText = "Email",
+            modifier = Modifier.fillMaxWidth(),
+            isError = isEmailInvalid
+        )
+        Button(
+            onClick = {
+                focusManager.clearFocus()
+                onPlaceOrderButtonClick()
+            },
+            enabled = isButtonEnabled,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text("Place Order")
+        }
     }
 }
 

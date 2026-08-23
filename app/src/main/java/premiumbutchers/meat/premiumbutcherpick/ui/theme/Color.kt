@@ -1,11 +1,12 @@
 package premiumbutchers.meat.premiumbutcherpick.ui.theme
-
 import androidx.compose.ui.graphics.Color
-
-val Purple80 = Color(0xFFD0BCFF)
-val PurpleGrey80 = Color(0xFFCCC2DC)
-val Pink80 = Color(0xFFEFB8C8)
-
-val Purple40 = Color(0xFF6650a4)
-val PurpleGrey40 = Color(0xFF625b71)
-val Pink40 = Color(0xFF7D5260)
+val ButcherRed = Color(0xFFA6292A)
+val ButcherRedLight = Color(0xFFE8A2A0)
+val Sage = Color(0xFF3F6B4F)
+val Cream = Color(0xFFFFF8F0)
+val Ink = Color(0xFF291B18)
+val Muted = Color(0xFF756762)
+val Border = Color(0xFFE5D5CA)
+val GradientStart = Color(0xFF8C1F24)
+val GradientEnd = Color(0xFFC94A32)
+val Success = Color(0xFF2E7D45)
